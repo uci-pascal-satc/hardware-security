@@ -1,1 +1,11 @@
-# hardware-security
+# Securing Information Systems with Flexible Hardware Techniques
+Traditional software-based malware detection systems cannot cope with the increasing incidence of cyber-attacks, especially for exploits targeting hardware design vulnerabilities. Our research focuses on improving overall system security through building hardware-based re-configurable malware detector to detect anomalies in near real-time and designing secure hardware architectures to improve computer system immunity against attacks.   
+We developed a real-time application-specific malware detection system which is implemented in tightly coupled FPGA to monitor the Control Flow Integrity (CFI) of running programs on CPU.  It runs in parallel with the CPU being monitored and provides real-time feedback to the system in case of control flow violation. The experiment result shows that the solution is scalable for large applications in embedded systems.  
+We are working on detecting malicious attacks targeting hardware vulnerabilities by monitoring microarchitectural features deviations [1-4]. This is done by collecting related data from existing hardware performance counters. We take Rowhammer (exploits DRAM disturbance error vulnerability) and Spectre (exploits speculative execution and side channel vulnerabilities) attacks to demonstrate the feasibility and effectiveness of detecting such attacks using microarchitectural features.
+The overall goals of our research are to improve flexibility and reduce the performance overhead of hardware-based malware detection systems to detect attacks launched from CPUs or GPUs and to design efficient security enabling mechanism at the architectural level.
+
+References
+[1] Congmiao Li, Jean-Luc Gaudiot, "Detecting Spectre Attacks Using Hardware Performance Counters", IEEE Transaction on Computers, June 2022.
+[2] Congmiao Li, Jean-Luc Gaudiot, “Challenges in Detecting an ‘Evasive Spectre’”, IEEE Computer Architecture Letters, 2020, Volume: 19, Issue: 1.
+[3] Congmiao Li, Jean-Luc Gaudiot, “Detecting Malicious Attacks Exploiting Hardware Vulnerabilities Using Performance Counters”, 2019 IEEE 43rd Annual Computer Software and Applications Conference (COMPSAC), Milwaukee, WI, USA, 2019, pp. 588-597.
+[4] Congmiao Li, Jean-Luc Gaudiot, “Online Detection of Spectre Attacks Using Microarchitectural Traces from Performance Counters,” 2018 30th International Symposium on Computer Architecture and High Performance Computing (SBAC-PAD).
